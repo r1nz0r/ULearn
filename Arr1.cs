@@ -18,10 +18,10 @@ namespace Arrays {
             maxValue += 1;
 
             var array = new int[length];
-            for (int i = 0; i < array.Length; ++i) {
-                array[i] = random.Next(maxValue);
-            }
-
+            
+            for (int i = 0; i < array.Length; ++i) 
+                array[i] = random.Next(maxValue);          
+            
             return array;
         }
 
