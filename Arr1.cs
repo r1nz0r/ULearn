@@ -8,6 +8,7 @@ namespace Arrays {
             const int arrayLength = 10;
             int maxValue = 20;
             var array = GenerateRandomArray(arrayLength, maxValue);
+            
             PrintArray(array);
             ShiftArray(array, 2);
             PrintArray(array);
