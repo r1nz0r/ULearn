@@ -11,25 +11,33 @@ namespace Arrays {
             int maxValue = 9;
             var array1 = GenerateRandomSorted(random, 5, maxValue);
             var array2 = GenerateRandomSorted(random, 8, maxValue);
+            ExecuteAll(array1, array2);
 
+            Console.ReadKey();
+        }
+
+        private static void ExecuteAll(int[] array1, int[] array2) {
             Console.Write("Array 1:\t");
             Print(array1);
             Console.Write("Array 2:\t");
             Print(array2);
 
             Console.WriteLine();
+
             Console.Write("Concat:\t\t");
             Print(Concat(array1, array2));
+
             Console.Write("Union:\t\t");
             Print(Union(array1, array2));
+
             Console.Write("Intersect:\t");
             Print(Intersect(array1, array2));
+
             Console.Write("Except (arr1 - arr2):\t");
             Print(Except(array1, array2));
+
             Console.Write("Except (arr2 - arr1):\t");
             Print(Except(array2, array1));
-
-            Console.ReadKey();
         }
 
         private static int[] GenerateRandomSorted(Random random, int length, int maxValue) {
